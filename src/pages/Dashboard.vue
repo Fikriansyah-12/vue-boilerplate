@@ -1,9 +1,14 @@
 <template>
-  <div class="space-y-6">
+  <div class="space-y-8">
     <!-- Welcome Card -->
-    <div class="bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg text-white p-8 shadow-lg">
-      <h2 class="text-3xl font-bold mb-2">Welcome back, {{ user?.name }}! 👋</h2>
-      <p class="text-blue-100">Here's what's happening with your business today.</p>
+    <div class="bg-gradient-to-br from-indigo-600 via-purple-600 to-indigo-700 rounded-xl text-white p-8 shadow-lg shadow-indigo-600/20 border border-indigo-500/20">
+      <div class="flex items-center justify-between">
+        <div>
+          <h2 class="text-4xl font-bold mb-3">Welcome back, {{ user?.name }}! 👋</h2>
+          <p class="text-indigo-100 text-lg">Here's what's happening with your business today.</p>
+        </div>
+        <div class="hidden lg:block text-6xl opacity-20">📊</div>
+      </div>
     </div>
 
     <!-- Stats Grid -->
@@ -41,23 +46,27 @@
     <!-- Charts Section -->
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
       <!-- Main Chart -->
-      <div class="lg:col-span-2 bg-white rounded-lg shadow p-6">
-        <h3 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
-          <iconify-icon icon="mdi:chart-line" class="text-blue-600" />
+      <div class="lg:col-span-2 bg-white rounded-xl shadow-card p-6 border border-slate-100">
+        <h3 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-3">
+          <div class="p-2 bg-gradient-to-br from-indigo-100 to-purple-100 rounded-lg">
+            <iconify-icon icon="mdi:chart-line" class="text-indigo-600" />
+          </div>
           Revenue Overview
         </h3>
-        <div class="h-72 bg-slate-50 rounded flex items-center justify-center text-slate-400">
+        <div class="h-72 bg-gradient-to-br from-slate-50 to-slate-100 rounded-lg flex items-center justify-center text-slate-400 border border-slate-200">
           <p class="flex items-center gap-2">
-            <iconify-icon icon="mdi:chart-box" class="text-2xl" />
-            Chart placeholder - Connect your data source
+            <iconify-icon icon="mdi:chart-box" class="text-3xl" />
+            <span>Chart placeholder - Connect your data source</span>
           </p>
         </div>
       </div>
 
       <!-- Recent Activity -->
-      <div class="bg-white rounded-lg shadow p-6">
-        <h3 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
-          <iconify-icon icon="mdi:bell" class="text-blue-600" />
+      <div class="bg-white rounded-xl shadow-card p-6 border border-slate-100">
+        <h3 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-3">
+          <div class="p-2 bg-gradient-to-br from-indigo-100 to-purple-100 rounded-lg">
+            <iconify-icon icon="mdi:bell" class="text-indigo-600" />
+          </div>
           Activity
         </h3>
         <div class="space-y-4">

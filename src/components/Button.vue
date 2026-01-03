@@ -41,12 +41,12 @@ const props = withDefaults(defineProps<Props>(), {
 
 const variantClasses = computed(() => {
   const variants = {
-    primary: 'bg-blue-600 hover:bg-blue-700 text-white focus:ring-blue-500',
-    secondary: 'bg-slate-600 hover:bg-slate-700 text-white focus:ring-slate-500',
-    danger: 'bg-red-600 hover:bg-red-700 text-white focus:ring-red-500',
-    success: 'bg-green-600 hover:bg-green-700 text-white focus:ring-green-500',
-    warning: 'bg-amber-600 hover:bg-amber-700 text-white focus:ring-amber-500',
-    outline: 'border-2 border-slate-300 hover:bg-slate-50 text-slate-700 focus:ring-slate-500',
+    primary: 'bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white focus:ring-indigo-500 shadow-md hover:shadow-lg',
+    secondary: 'bg-slate-600 hover:bg-slate-700 text-white focus:ring-slate-500 shadow-md hover:shadow-lg',
+    danger: 'bg-red-600 hover:bg-red-700 text-white focus:ring-red-500 shadow-md hover:shadow-lg',
+    success: 'bg-green-600 hover:bg-green-700 text-white focus:ring-green-500 shadow-md hover:shadow-lg',
+    warning: 'bg-amber-600 hover:bg-amber-700 text-white focus:ring-amber-500 shadow-md hover:shadow-lg',
+    outline: 'border-2 border-slate-300 hover:bg-slate-50 text-slate-700 focus:ring-slate-500 transition-colors',
   }
   return variants[props.variant]
 })

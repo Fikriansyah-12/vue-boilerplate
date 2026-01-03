@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#3b82f6',
+        primary: '#6366f1',
         secondary: '#1e293b',
         danger: '#ef4444',
         success: '#10b981',
@@ -15,7 +15,14 @@ export default {
       },
       spacing: {
         'sidebar': '240px',
-      }
+      },
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+      },
+      boxShadow: {
+        'card': '0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.04)',
+        'card-hover': '0 4px 12px rgba(0, 0, 0, 0.12)',
+      },
     },
   },
   plugins: [],

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex h-screen bg-slate-50">
+  <div class="flex h-screen bg-gradient-to-br from-slate-50 via-slate-50 to-slate-100">
     <!-- Sidebar -->
     <Sidebar />
 
